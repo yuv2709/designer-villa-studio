@@ -1,7 +1,7 @@
 import React from "react";
 
 export type MenuItem = {
-  id: string;
+  id: number;
   type: "MenuItem" | "MenuList";
   label: string;
   url?: string;
