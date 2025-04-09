@@ -36,7 +36,10 @@ const ResTopNavbar = ({ data }: { data: NavMenu }) => {
         <SheetHeader className="mb-10">
           <SheetTitle asChild>
             <SheetClose asChild>
-              <Link href="/" className={cn([montserrat.className, "text-2xl"])}>
+              <Link
+                href="/"
+                className={cn([montserrat.className, "text-xl sm:text-2xl"])}
+              >
                 DESIGNER VILLA STUDIO
               </Link>
             </SheetClose>
