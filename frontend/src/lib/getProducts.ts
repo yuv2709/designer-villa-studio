@@ -2,13 +2,14 @@ import { Product } from "@/types/product.types";
 
 export async function getProducts(): Promise<Product[]> {
   try {
+    const baseUrl = process.env.NEXT_PUBLIC_API_BASE_URL;
     let allProducts: Product[] = [];
     let page = 1;
     const limit = 1;
     let hasMore = true;
 
     while (hasMore) {
-      const res = await fetch(`http://localhost:3001/api/products?page=${page}&limit=${limit}`, {
+      const res = await fetch(`${baseUrl}/api/products?page=${page}&limit=${limit}`, {
         cache: "no-store",
       });
 
@@ -25,7 +26,6 @@ export async function getProducts(): Promise<Product[]> {
       }
 
       const products: Product[] = json.docs.map((p: any) => {
-        // ✅ Use Cloudinary URL from text field or fallback
         const imageUrl = p.cloudImageUrl || "/images/default.webp";
 
         return {
@@ -47,7 +47,6 @@ export async function getProducts(): Promise<Product[]> {
 
       allProducts.push(...products);
 
-      // Exit loop if no more pages
       hasMore = json.hasNextPage ?? json.docs.length === limit;
       page++;
     }
