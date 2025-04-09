@@ -86,20 +86,22 @@ const TopNavbar = () => {
 
         {/* Center: logo */}
         <div className="flex-1 flex justify-center">
-          <Link
-            href="/"
-            className={cn([
-              montserrat.className, // ✅ replaced here
-              "text-2xl lg:text-[32px] mb-1 whitespace-nowrap text-center",
-            ])}
-          >
-            DESIGNER VILLA STUDIO
-          </Link>
+        <Link
+  href="/"
+  className={cn([
+    montserrat.className,
+    "text-base sm:text-lg md:text-xl lg:text-2xl mb-1 whitespace-nowrap text-center",
+  ])}
+>
+  DESIGNER VILLA STUDIO
+</Link>
+
+
         </div>
 
         {/* Right: search + cart + user */}
         <div className="flex items-center gap-3 min-w-0">
-          {/* Mobile search */}
+          {/* Mobile search
           <Link href="/search" className="block md:hidden p-1">
             <Image
               priority
@@ -109,7 +111,7 @@ const TopNavbar = () => {
               alt="search"
               className="w-[22px] h-[22px]"
             />
-          </Link>
+          </Link> */}
 
           {/* Desktop search */}
           <InputGroup className="hidden md:flex bg-[#F0F0F0]">
