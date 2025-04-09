@@ -3,12 +3,12 @@ import { Discount } from "@/types/product.types";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 export type RemoveCartItem = {
-  id: number;
+  id: string;
   attributes: string[];
 };
 
 export type CartItem = {
-  id: number;
+  id: string;
   name: string;
   srcUrl: string;
   price: number;

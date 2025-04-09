@@ -1,24 +1,24 @@
 import React from "react";
 
 export type SocialNetworks = {
-  id: number;
+  id: string;
   icon: React.ReactNode;
   url: string;
 };
 
 export type FLink = {
-  id: number;
+  id: string;
   label: string;
   url: string;
 };
 
 export type FooterLinks = {
-  id: number;
+  id: string;
   title: string;
   children: FLink[];
 };
 
 export type PaymentBadge = {
-  id: number;
+  id: string;
   srcUrl: string;
 };
