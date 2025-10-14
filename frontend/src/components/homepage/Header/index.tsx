@@ -27,7 +27,7 @@ const slides = [
   {
     id: 3,
     title: "Jewellery that Speaks Without Words",
-    subtitle: "Refresh your accessories with our latest collection.",
+    subtitle: "Refresh your accessories with our latest jewellery collection.",
     image: "/images/banner3.jpg",
     buttonText: "Explore Jewellery",
     buttonLink: "/jewellery",
