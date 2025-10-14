@@ -29,7 +29,7 @@ const slides = [
     title: "Jewellery that Speaks Without Words",
     subtitle: "Refresh your accessories with our latest jewellery collection.",
     image: "/images/banner3.jpg",
-    buttonText: "Explore Jewellery",
+    buttonText: "Explore Jewellery Collection",
     buttonLink: "/jewellery",
   },
 ];
